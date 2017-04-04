@@ -29,7 +29,7 @@ paginate_path: "/articles/page:num/"  # link scheme for articles, should be letf
 # > Title is the tile of the navigation item, url the url and desc is the tooltip
 navigation:
   - title: About
-    url: /       #single / takes it back to the main page
+    url: /about/       #for now, about is the same as my home page
     desc: About
   - title: Research
     url: /research/
