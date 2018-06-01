@@ -8,10 +8,7 @@ permalink: /about/
 
 
  
- I am a PhD student in Computational Biology at Duke University in the Lew lab.
- 
- In the lab, I use the budding yeast as a model organism to study gradient tracking in eukaryotic cells. Gradient tracking refers to the ability of a cell to move (chemotaxis) or grow (chemotropism) toward or away from a chemical source.
- 
+I am a PhD student in the Computational Biology and Bioinformatics program at Duke University, and I am part of the Lew lab. My current research is focused on understanding how yeast sense spatial chemical gradients. To uncover the mechanistic basis for gradient sensing in yeast, I utilize a combination of genetics, confocal microscopy, and simulations of partial differential equations.
  
  
 
