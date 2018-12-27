@@ -7,8 +7,9 @@ baseurl:     ""
 url:         "https://debrajghose.com"
 date_format: "%b %-d, %Y"
 header_pages:
- - about.md
- - contact.html
+ - cv.md
+ - research.md
+ - misc.md
 
 # Google services
 google_verification:
