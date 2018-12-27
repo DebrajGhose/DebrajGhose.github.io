@@ -1,7 +1,7 @@
 ---
 layout: page
 title: CV
-permalink: /about/
+permalink: /CV/
 tags: cv
 ---
 This is where my CV goes.
