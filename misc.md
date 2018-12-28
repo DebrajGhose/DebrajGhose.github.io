@@ -4,6 +4,6 @@ title: Miscellaneous
 permalink: /misc/
 tags: cv
 ---
-# Music and Art
+<h1> Music and Art </h1>
 
 What do I put here?
