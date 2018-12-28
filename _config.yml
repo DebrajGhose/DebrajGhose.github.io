@@ -1,15 +1,14 @@
 # Site settings
 title:       Debraj Ghose
-email:       dg.chaos06@gmail.com
+email:       your_email@example.com
 author:      Debraj Ghose
-description: "Debraj's personal website"
+description: "Debraj's personal website."
 baseurl:     ""
-url:         "https://debrajghose.com"
+url:         "debrajghose.com"
 date_format: "%b %-d, %Y"
 header_pages:
- - reserach.md
+ - research.md
  - cv.md
- - misc.md
 
 # Google services
 google_verification:
