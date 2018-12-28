@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Miscellaneous
+title:  
 permalink: /misc/
 tags: cv
 ---
