@@ -8,7 +8,7 @@ url:         "https://debrajghose.com"
 date_format: "%b %-d, %Y"
 header_pages:
  - cv.md
- - research.html
+ - research.md
  - misc.md
 
 # Google services
