@@ -1,10 +1,10 @@
 # Site settings
-title:       Pixyll
-email:       your_email@example.com
-author:      John Otander
-description: "A simple, beautiful theme for Jekyll that emphasizes content rather than aesthetic fluff."
+title:       Debraj Ghose
+email:       
+author:      Debraj Ghose
+description: "Debraj's personal website"
 baseurl:     ""
-url:         "http://pixyll.com"
+url:         "https://debrajghose.com"
 date_format: "%b %-d, %Y"
 header_pages:
  - about.md
@@ -129,4 +129,4 @@ plugins:
 exclude:
   - Gemfile
   - Gemfile.lock
-- vendor
+  - vendor
