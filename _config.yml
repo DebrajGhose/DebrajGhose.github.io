@@ -7,8 +7,8 @@ baseurl:     ""
 url:         "debrajghose.com"
 date_format: "%b %-d, %Y"
 header_pages:
- - about.md
  - research.md
+ - dummy.md
  - contact.html
 
 # Google services
