@@ -1,6 +1,6 @@
 ---
 layout: page
 title: About
-permalink: /
+permalink: /index.html
 tags: research
 ---
