@@ -1,8 +1,9 @@
-*.swp
-*.swo
+_site
+.sass-cache
+.DS_Store
+.jekyll-metadata
 
-hugo
-public/*
-content/*
-config.*
-exampleSite/public/
+# Ignore the config file that's used for gh-pages.
+_config.gh-pages.yml
+
+Gemfile.lock
