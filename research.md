@@ -1,12 +1,13 @@
 ---
-layout: page
+layout: default
 title: Research
 permalink: /research/
 tags: research
 ---
 
-#Headings work or not?
 
-<h1>Maybe this instead?</h1>
+<h1>Research</h1>
+
+<h2>Gradient sensing in single cells</h2>
 
 Things I do for fun in the lab.
