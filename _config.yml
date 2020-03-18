@@ -7,8 +7,8 @@ baseurl:     ""
 url:         "debrajghose.com"
 date_format: "%b %-d, %Y"
 header_pages:
- - about.md
- - research.md
+ - about.html
+ - research.html
  - blog.html
  - contact.html
 
