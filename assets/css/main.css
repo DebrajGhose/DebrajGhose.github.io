@@ -132,7 +132,8 @@ input, select, textarea {
 	p {
 		color: #555;
 		margin: 0 0 2.25em 0;
-		font-size: 1.3em;
+		font-size: 1.17em;
+		line-height: 2;
 	}
 
 	h1 {
