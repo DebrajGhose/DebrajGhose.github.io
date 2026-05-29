@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<title>Debraj Ghose</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<style>
+		:root {
+			--accent: #4acaa8;
+			--text: #555;
+			--text-bold: #2b2b2b;
+			--text-light: #888;
+			--border: #eee;
+			--bg: #ffffff;
+			--sidebar-bg: #ffffff;
+		}
+
+		* { box-sizing: border-box; }
+
+		html { scroll-behavior: smooth; }
+
+		body {
+			margin: 0;
+			font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Helvetica, Arial, sans-serif;
+			font-size: 15px;
+			line-height: 1.75;
+			color: var(--text);
+			background: var(--bg);
+			-webkit-font-smoothing: antialiased;
+			opacity: 0;
+			animation: fadeIn 0.6s ease-out 0.1s forwards;
+		}
+
+		@keyframes fadeIn {
+			to { opacity: 1; }
+		}
+
+		a {
+			color: var(--accent);
+			text-decoration: none;
+			border-bottom: 1px dotted var(--accent);
+			transition: color 0.2s, border-color 0.2s;
+		}
+		a:hover { color: var(--text-bold); border-bottom-color: var(--text-bold); }
+
+		h1 {
+			font-size: 1.75rem;
+			color: var(--text-bold);
+			font-weight: 600;
+			margin: 0 0 1.25rem;
+			letter-spacing: -0.01em;
+		}
+
+		p { margin: 0 0 1.1em; }
+
+		strong, b { color: var(--text-bold); font-weight: 600; }
+
+		.layout {
+			display: flex;
+			min-height: 100vh;
+		}
+
+		aside {
+			flex: 0 0 22%;
+			max-width: 320px;
+			min-width: 260px;
+			padding: 3.5rem 2rem;
+			background: var(--sidebar-bg);
+			border-right: 1px solid var(--border);
+			position: sticky;
+			top: 0;
+			align-self: flex-start;
+			height: 100vh;
+			display: flex;
+			flex-direction: column;
+			text-align: center;
+		}
+
+		.avatar {
+			width: 128px;
+			height: 128px;
+			border-radius: 50%;
+			object-fit: cover;
+			margin: 0 auto 1.5rem;
+			display: block;
+		}
+
+		.name {
+			font-size: 1.4rem;
+			font-weight: 600;
+			color: var(--text-bold);
+			margin: 0 0 2rem;
+			letter-spacing: -0.01em;
+		}
+		.name a { color: inherit; border: none; }
+
+		nav ul {
+			list-style: none;
+			padding: 0;
+			margin: 0 0 auto;
+			border-top: 1px solid var(--border);
+		}
+		nav li {
+			border-bottom: 1px solid var(--border);
+		}
+		nav a {
+			display: block;
+			padding: 0.75rem 0;
+			color: var(--text-light);
+			border: none;
+			font-size: 0.95rem;
+			letter-spacing: 0.02em;
+			transition: color 0.2s;
+		}
+		nav a:hover, nav a.active { color: var(--accent); }
+
+		.social {
+			display: flex;
+			justify-content: center;
+			gap: 1.25rem;
+			margin-top: 2rem;
+			padding-top: 1.5rem;
+			border-top: 1px solid var(--border);
+		}
+		.social a {
+			color: var(--text-light);
+			border: none;
+			display: inline-flex;
+			align-items: center;
+			justify-content: center;
+			transition: color 0.2s;
+		}
+		.social a:hover { color: var(--accent); }
+		.social svg { width: 22px; height: 22px; fill: currentColor; }
+
+		main {
+			flex: 1;
+			min-width: 0;
+		}
+
+		section.content {
+			padding: 4rem 4rem;
+			border-bottom: 1px solid var(--border);
+			max-width: 800px;
+		}
+		section.content:last-of-type { border-bottom: none; }
+
+		.pub {
+			padding-left: 0;
+			position: relative;
+		}
+		.pub em { color: var(--text-light); }
+
+		.cover {
+			float: right;
+			width: 180px;
+			margin: 0 0 1rem 1.5rem;
+			border-radius: 2px;
+		}
+
+		footer {
+			padding: 2rem 4rem;
+			font-size: 0.85rem;
+			color: var(--text-light);
+			max-width: 800px;
+		}
+
+		@media (max-width: 900px) {
+			.layout { flex-direction: column; }
+			aside {
+				flex: none;
+				max-width: none;
+				width: 100%;
+				min-width: 0;
+				position: static;
+				height: auto;
+				padding: 2.5rem 1.5rem;
+				border-right: none;
+				border-bottom: 1px solid var(--border);
+			}
+			nav ul {
+				display: flex;
+				flex-wrap: wrap;
+				justify-content: center;
+				border-top: none;
+				gap: 0 1.5rem;
+			}
+			nav li { border-bottom: none; }
+			.social { margin-top: 1.5rem; }
+			section.content { padding: 2.5rem 1.5rem; }
+			footer { padding: 1.5rem; }
+			.cover { float: none; display: block; margin: 0 0 1rem; width: 140px; }
+		}
+	</style>
+</head>
+<body>
+	<div class="layout">
+		<aside>
+			<img class="avatar" src="images/avatar.gif" alt="Debraj Ghose" />
+			<div class="name"><a href="#about">Debraj Ghose</a></div>
+			<nav>
+				<ul>
+					<li><a href="#about">About</a></li>
+					<li><a href="#publications">Publications</a></li>
+					<li><a href="#contact">Contact</a></li>
+				</ul>
+			</nav>
+			<div class="social">
+				<a href="https://github.com/DebrajGhose" aria-label="GitHub" target="_blank" rel="noopener">
+					<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.39 7.86 10.91.58.1.79-.25.79-.56 0-.27-.01-1-.02-1.96-3.2.7-3.87-1.54-3.87-1.54-.52-1.33-1.27-1.69-1.27-1.69-1.04-.71.08-.7.08-.7 1.15.08 1.76 1.18 1.76 1.18 1.02 1.75 2.68 1.24 3.34.95.1-.74.4-1.24.72-1.53-2.55-.29-5.24-1.28-5.24-5.68 0-1.25.45-2.28 1.18-3.08-.12-.29-.51-1.46.11-3.04 0 0 .96-.31 3.15 1.18a10.95 10.95 0 0 1 5.74 0c2.19-1.49 3.15-1.18 3.15-1.18.62 1.58.23 2.75.11 3.04.74.8 1.18 1.83 1.18 3.08 0 4.41-2.7 5.39-5.27 5.67.41.36.77 1.06.77 2.14 0 1.55-.01 2.8-.01 3.18 0 .31.21.67.8.55C20.21 21.38 23.5 17.08 23.5 12 23.5 5.65 18.35.5 12 .5z"/></svg>
+				</a>
+				<a href="https://orcid.org/0000-0002-2355-8491" aria-label="ORCID" target="_blank" rel="noopener">
+					<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 0C5.37 0 0 5.37 0 12s5.37 12 12 12 12-5.37 12-12S18.63 0 12 0zM7.37 17.92H5.83V7.42h1.54v10.5zM6.6 6.36a.94.94 0 1 1 0-1.88.94.94 0 0 1 0 1.88zm11.06 11.56h-3.36V7.42h3.27c3.12 0 4.6 2.23 4.6 5.24 0 3.27-2.04 5.26-4.51 5.26zm-.16-9.13h-1.66v7.73h1.81c2.6 0 3.18-1.97 3.18-3.86 0-2.45-1.46-3.87-3.33-3.87z"/></svg>
+				</a>
+			</div>
+		</aside>
+
+		<main>
+			<section id="about" class="content">
+				<h1>Hi!</h1>
+				<p>I am broadly interested in how biological structures self-organize and perform computations. More specifically, I am developing a research program to understand and control the collective behavior of human immune cells. By doing so, I hope to build programmable biological robots that fight intruders like infections or tumors. I started this work in Don Ingber's lab at Harvard University (<a href="https://www.biorxiv.org/content/10.1101/2025.10.28.685215v1">Ghose et al, 2025</a>) and am now continuing it in Wendell Lim's lab at University of California, San Francisco.</p>
+
+				<p>Previously, I got my PhD from Daniel Lew's lab at Duke University where I studied how eukaryotic cells respond to chemical gradients. To uncover gradient sensing mechanisms, I combined yeast genetics, quantitative live cell imaging, and mathematical modeling. My colleagues and I mechanistically described dynamics of a cell's polarized front, discovered that the polarized front can perform chemotaxis up chemical gradients, and theoretically predicted mechanisms underlying chemotactic bias (<a href="https://www.molbiolcell.org/doi/10.1091/mbc.E20-01-0040">Ghose &amp; Lew, 2020</a>, <a href="https://www.pnas.org/content/118/22/e2025445118">Ghose et al, 2021</a>).</p>
+
+				<p>Outside the lab, I enjoy <a href="https://www.deviantart.com/daybridgeghost/art/Bacterial-Chemotaxis-Through-Integral-Control-523028245">painting</a>, <a href="https://www.youtube.com/watch?v=fq90Z-c8z70">playing guitar</a>, and <a href="https://www.instagram.com/p/COjhBviAsxe/">riding single-wheeled things</a>.</p>
+			</section>
+
+			<section id="publications" class="content">
+				<h1>Publications</h1>
+
+				<p class="pub"><strong>Ghose D</strong>, Ferrante T &amp; Ingber D. <u>Cytokines control the physical state of immune tissue</u>. <em>bioRxiv</em>. 2025. [<a href="https://www.biorxiv.org/content/10.1101/2025.10.28.685215v1">Link</a>]</p>
+
+				<p class="pub"><strong>Ghose D</strong>, Nolen J, Guan K, Elston TC &amp; Lew DJ. <u>Ratiometric signaling produces robust temporal integration for accurate cellular gradient sensing</u>. <em>bioRxiv</em>. 2026. [<a href="https://www.biorxiv.org/content/10.1101/2025.04.18.649595v2">Link</a>]</p>
+
+				<p class="pub"><strong>Ghose D</strong>, Elston T &amp; Lew DJ. <u>Orientation of Cell Polarity by Chemical Gradients</u>. <em>Annual Review of Biophysics</em>. 2022. [<a href="https://www.annualreviews.org/doi/abs/10.1146/annurev-biophys-110821-071250">Link</a>]</p>
+
+				<p class="pub"><strong>Ghose D</strong>, Jacobs K, Ramirez S, Elston T &amp; Lew DJ. <u>Chemotactic movement of a polarity site enables yeast cells to find their mates</u>. <em>Proceedings of the National Academy of Sciences</em>. 2021. [<a href="https://drive.google.com/file/d/1DDtN95gjF969eqc37IRKvGJb5bo1uL-d/view?usp=sharing">Download</a>/<a href="https://www.pnas.org/content/118/22/e2025445118.short">Link</a>]</p>
+
+				<p class="pub">Clark-Cotton MR, Henderson N, Pablo M, <strong>Ghose D</strong>, Elston T &amp; Lew DJ. <u>Exploratory polarization facilitates mating partner selection in Saccharomyces cerevisiae</u>. <em>Molecular Biology of the Cell</em>. 2021. [<a href="https://www.molbiolcell.org/doi/10.1091/mbc.E21-02-0068">Link</a>]</p>
+
+				<p class="pub"><a href="https://drive.google.com/open?id=1lkRal78PpzfbdQyPqtaDF-IyPjXUdE5J"><img class="cover" src="images/ghoselewcover_Page_1.png" alt="MBoC cover" /></a><strong>Ghose D</strong> &amp; Lew DJ. <u>Mechanistic insights into actin-driven polarity site movement in yeast</u>. <em>Molecular Biology of the Cell</em>. 2020. (Chosen to be a Highlight and nominated for Best Paper of the Year) [<a href="https://drive.google.com/open?id=1nw_ZrM7Uz6RkBptEXhpM_394hAJqM94G">Download</a>/<a href="https://drive.google.com/open?id=1lkRal78PpzfbdQyPqtaDF-IyPjXUdE5J">Cover</a>/<a href="https://www.molbiolcell.org/doi/prev/20200318-aop/abs/10.1091/mbc.E20-01-0040">Link</a>]</p>
+
+				<p class="pub">Henderson NT, Pablo M, <strong>Ghose D</strong>, Clark-Cotton MR, Zyla TR, Nolen J, Elston TC &amp; Lew DJ. <u>Ratiometric GPCR signaling enables directional sensing in yeast</u>. <em>PLoS biology</em>. 2019. [<a href="https://journals.plos.org/plosbiology/article/file?id=10.1371/journal.pbio.3000484&amp;type=printable">Download</a>/<a href="https://journals.plos.org/plosbiology/article/comments?id=10.1371/journal.pbio.3000484">Link</a>]</p>
+			</section>
+
+			<section id="contact" class="content">
+				<h1>Contact</h1>
+				<p><strong>Email:</strong> debraj.ghose@ucsf.edu</p>
+			</section>
+		</main>
+	</div>
+</body>
+</html>
